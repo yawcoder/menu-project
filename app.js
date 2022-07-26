@@ -84,7 +84,7 @@ window.addEventListener("DOMContentLoaded", function () {
 //filter items
 filterBtns.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
-    const category = e.currentTarget.dataset.id;
+    const category = e.currentTarget.value;
     const menuCategory = menu.filter(function(menuItem){
     //console.log(menuItem.category);
 if(menuItem.category === category) {
